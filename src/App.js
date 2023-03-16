@@ -7,13 +7,13 @@ import Skills from "./components.js/skills";
 import Introduction from "./components.js/introduction";
 import Education from "./components.js/education";
 import About from "./components.js/about";
+import Footer from "./components.js/footer";
 
 function App() {
   return (
     <div>
       <Introduction />
       <div className="App min-h-screen bg-gray-900 text-gray-100">
-        {/* <header className="bg-blue-900 p-4 shadow-md">tommiMAki</header> */}
         <main className="container mx-auto px-4 py-12">
           <About />
           <section className="text-center my-12">
@@ -21,7 +21,10 @@ function App() {
               Projects
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+            <div
+              id="projects"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6"
+            >
               {/* Replace the contents of the div below with your project details */}
               <Project
                 title="Good Mood"
@@ -58,14 +61,15 @@ function App() {
           <Education />
           <Contact />
         </main>
-        <footer className="bg-black p-4 mt-12 flex justify-center">
-          <a
+        <footer className="bg-#1F2937 p-4 mt-12 flex justify-center">
+          {/* <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin-in text-2xl text-white"></i>
-          </a>
+          </a> */}
+          <Footer />
         </footer>
       </div>
     </div>

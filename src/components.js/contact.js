@@ -9,6 +9,7 @@ const Contact = () => {
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
+
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
   };
@@ -18,11 +19,9 @@ const Contact = () => {
 
     console.log(email);
     console.log(message);
-    const recipientEmail = "tommi@tommimaki.com"; // replace with the recipient's email address
 
     axios
-      .post("/api/sendEmail", { recipientEmail, message })
-
+      .post("/api/sendEmail", { email, message })
       .then((response) => {
         setEmailSent(true);
       })
@@ -31,61 +30,60 @@ const Contact = () => {
       });
   };
 
-  if (emailSent) {
-    return (
-      <section className="text-center">
-        <h2 className="text-4xl font-semibold mb-4">Thank you!</h2>
-        <p>Your message has been sent.</p>
-      </section>
-    );
-  }
-
   return (
-    <section className="text-center">
-      <h2 className="text-4xl font-semibold mb-4">Contact Me</h2>
-      <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label
-            className="block text-gray-300 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-gray-200 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="you@example.com"
-            value={email}
-            onChange={handleEmailChange}
-          />
+    <section id="contact" className="text-center">
+      <h2 className="text-4xl font-semibold text-center mb-20 mt-20">
+        Contact
+      </h2>
+      {emailSent ? (
+        <div>
+          <h2 className="text-4xl font-semibold mb-4">Thank you!</h2>
+          <p>Your message has been sent.</p>
         </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-300 text-sm font-bold mb-2"
-            htmlFor="message"
-          >
-            Message
-          </label>
-
-          <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="message"
-            rows="6"
-            placeholder="Write your message here."
-            value={message}
-            onChange={handleMessageChange}
-          ></textarea>
-        </div>
-        <div className="text-center">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+      ) : (
+        <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label
+              className="block text-gray-300 text-sm font-bold mb-2"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="you@example.com"
+              value={email}
+              onChange={handleEmailChange}
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-gray-300 text-sm font-bold mb-2"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="message"
+              rows="6"
+              placeholder="Write your message here."
+              value={message}
+              onChange={handleMessageChange}
+            ></textarea>
+          </div>
+          <div className="text-center">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      )}
     </section>
   );
 };

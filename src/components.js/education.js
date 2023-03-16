@@ -2,7 +2,7 @@ import React from "react";
 
 function Education() {
   return (
-    <section className="text-center my-12">
+    <section id="education" className="text-center my-12">
       <h2 className="text-4xl font-semibold text-center mb-20 mt-20">
         Education
       </h2>
