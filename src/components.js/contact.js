@@ -1,16 +1,49 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
+
 const Contact = () => {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log(email);
+    console.log(message);
+    const recipientEmail = "tommi@tommimaki.com"; // replace with the recipient's email address
+
+    axios
+      .post("/api/sendEmail", { recipientEmail, message })
+
+      .then((response) => {
+        setEmailSent(true);
+      })
+      .catch((error) => {
+        console.log("Error sending email:", error.response.data);
+      });
+  };
+
+  if (emailSent) {
+    return (
+      <section className="text-center">
+        <h2 className="text-4xl font-semibold mb-4">Thank you!</h2>
+        <p>Your message has been sent.</p>
+      </section>
+    );
+  }
 
   return (
     <section className="text-center">
       <h2 className="text-4xl font-semibold mb-4">Contact Me</h2>
-      <form className="max-w-sm mx-auto">
+      <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
             className="block text-gray-300 text-sm font-bold mb-2"
@@ -34,11 +67,14 @@ const Contact = () => {
           >
             Message
           </label>
+
           <textarea
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="message"
             rows="6"
             placeholder="Write your message here."
+            value={message}
+            onChange={handleMessageChange}
           ></textarea>
         </div>
         <div className="text-center">
