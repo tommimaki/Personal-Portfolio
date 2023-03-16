@@ -61,46 +61,58 @@ const Introduction = () => {
         backgroundColor: animationCompleted ? "#1F2937" : "black",
         padding: animationCompleted ? "1rem" : "",
         minHeight: animationCompleted ? "4rem" : "",
-        justifyContent: "center", // <-- add this
-        flexGrow: 1, // <-- and this
+        justifyContent: "center",
+        flexGrow: 1,
       }}
     >
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "center",
           width: "100%",
         }}
       >
-        <h1
-          ref={titleRef}
-          className="text-5xl font-bold mt-5"
-          data-value="Tommi Mäki"
+        <div
           style={{
-            cursor: "default",
-            alignSelf: animationCompleted ? "flex-start" : "center",
-            margin: animationCompleted ? "0 1rem" : "",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          onMouseEnter={handleMouseEnter}
         >
-          Tommi Mäki
-        </h1>
-        <h2
-          ref={subtitleRef}
-          className={`text-2xl font-semibold mt-3 ${
-            animationCompleted ? "hidden" : ""
-          }`}
-          data-value="My Portfolio"
-        >
-          My Portfolio
-        </h2>
+          <h1
+            ref={titleRef}
+            className="text-5xl font-bold mt-5"
+            data-value="Tommi Mäki"
+            style={{
+              cursor: "default",
+              alignSelf: "center",
+              margin: animationCompleted ? "0 1rem" : "",
+            }}
+            onMouseEnter={handleMouseEnter}
+          >
+            Tommi Mäki
+          </h1>
+          <h2
+            ref={subtitleRef}
+            className={`text-2xl font-semibold mt-3 ${
+              animationCompleted ? "hidden" : ""
+            }`}
+            data-value="My Portfolio"
+          >
+            My Portfolio
+          </h2>
+        </div>
+
         {animationCompleted && (
           <nav
             className="mt-1"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <Link
               activeClass="active"
@@ -157,7 +169,6 @@ const Introduction = () => {
             >
               Contact
             </Link>
-            {/* Add more links for other sections here */}
           </nav>
         )}
       </div>
