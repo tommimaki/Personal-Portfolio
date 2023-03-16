@@ -21,7 +21,10 @@ const Contact = () => {
     console.log(message);
 
     axios
-      .post("/api/sendEmail", { email, message })
+      .post("https://backportfoliotommi.fly.dev/api/sendEmail", {
+        email,
+        message,
+      })
       .then((response) => {
         setEmailSent(true);
       })
