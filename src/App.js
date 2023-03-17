@@ -4,15 +4,17 @@ import goodmood from "./assets/goodmood.png";
 import Contact from "./components.js/contact";
 import Project from "./components.js/project";
 import Skills from "./components.js/skills";
-import Introduction from "./components.js/introduction";
+import Header from "./components.js/header";
 import Education from "./components.js/education";
 import About from "./components.js/about";
 import Footer from "./components.js/footer";
+import TitleAnimation from "./components.js/titleAnimation";
 
 function App() {
   return (
     <div>
-      <Introduction />
+      <TitleAnimation />
+      <Header />
       <div className="App min-h-screen bg-gray-900 text-gray-100">
         <main className="container mx-auto px-4 py-12">
           <About />
@@ -62,13 +64,6 @@ function App() {
           <Contact />
         </main>
         <footer className="bg-#1F2937 p-4 mt-12 flex justify-center">
-          {/* <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-linkedin-in text-2xl text-white"></i>
-          </a> */}
           <Footer />
         </footer>
       </div>

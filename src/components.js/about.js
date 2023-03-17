@@ -3,7 +3,10 @@ import skater1 from "../assets/skater1.png";
 
 function About() {
   return (
-    <section className="my-12 flex flex-col items-center justify-center md:flex-row md:justify-between">
+    <section
+      id="about"
+      className="my-12 flex flex-col items-center justify-center md:flex-row md:justify-between"
+    >
       <div className="md:flex md:flex-col md:items-center">
         <h2 className="text-4xl font-semibold mb-4 md:mb-20 text-center md:text-left">
           About

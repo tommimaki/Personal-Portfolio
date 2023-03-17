@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-#1F2937 p-8 mt-12 flex justify-center items-center">
       <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/in/tommi-maki/"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-4"
@@ -13,7 +13,7 @@ const Footer = () => {
         <FaLinkedin className="text-4xl text-white" />
       </a>
       <a
-        href="https://wa.me/your_phone_number"
+        href="https://wa.me/358405467598"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-4"

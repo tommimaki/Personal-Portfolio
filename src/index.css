@@ -22,31 +22,3 @@
 .skill-card:hover {
   @apply transform scale-110;
 }
-
-.introduction-container {
-  background-color: black;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-  transition: all 1s ease-in-out;
-}
-
-.introduction-container.minimized {
-  top: 0;
-  bottom: auto;
-  height: 100px;
-  z-index: 1;
-  position: relative;
-}
-
-.hidden {
-  display: none;
-}

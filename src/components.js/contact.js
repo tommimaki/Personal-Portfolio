@@ -20,13 +20,15 @@ const Contact = () => {
     console.log(email);
     console.log(message);
 
+    setEmailSent(true);
+
     axios
       .post("https://backportfoliotommi.fly.dev/api/sendEmail", {
         email,
         message,
       })
       .then((response) => {
-        setEmailSent(true);
+        console.log("Email sent successfully");
       })
       .catch((error) => {
         console.log("Error sending email:", error.response.data);
@@ -41,7 +43,7 @@ const Contact = () => {
       {emailSent ? (
         <div>
           <h2 className="text-4xl font-semibold mb-4">Thank you!</h2>
-          <p>Your message has been sent.</p>
+          <p>Your message has been sent. I'll get back to you ASAP!</p>
         </div>
       ) : (
         <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
