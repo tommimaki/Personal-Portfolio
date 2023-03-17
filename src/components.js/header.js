@@ -51,7 +51,7 @@ const Header = () => {
         <nav
           className={`${
             isOpen ? "flex" : "hidden"
-          } md:hidden flex-col items-center bg-gray-800 w-full h-auto absolute z-10 top-16 right-0 py-4`}
+          } md:hidden flex-col items-center bg-gray-800 w-full h-auto absolute z-10 top-0 right-0 py-4`}
         >
           <button
             className="text-white focus:outline-none mb-4 self-center"

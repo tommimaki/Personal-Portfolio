@@ -9,7 +9,7 @@ const Project = ({ title, description, imgSrc, websiteLink, githubLink }) => {
         <img
           src={imgSrc}
           alt={`${title} preview`}
-          className="w-full h-auto mb-4 rounded"
+          className="w-full  h-[300px]  h-auto mb-4 rounded"
         />
         <a
           href={websiteLink}

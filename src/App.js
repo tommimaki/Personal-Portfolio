@@ -1,6 +1,7 @@
 import React from "react";
 
 import goodmood from "./assets/goodmood.png";
+import api from "./assets/api.png";
 import Contact from "./components.js/contact";
 import Project from "./components.js/project";
 import Skills from "./components.js/skills";
@@ -19,7 +20,7 @@ function App() {
         <main className="container mx-auto px-4 py-12">
           <About />
           <section className="text-center my-12">
-            <h2 className="text-4xl font-semibold mb-2 text-center  mb-20">
+            <h2 className="text-4xl font-semibold mb-2 text-center  mb-10">
               Projects
             </h2>
 
@@ -36,11 +37,10 @@ function App() {
                 githubLink="https://github.com/tommimaki/GoodMood"
               />
               <Project
-                title="Project 1"
-                description="A brief description of Project 1. lorem"
-                imgSrc="https://via.placeholder.com/300x200"
-                websiteLink="https://project1.example.com"
-                githubLink="https://github.com/username/project1"
+                title="Green Helsinki"
+                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegans restaurants, backend and user  authentication in firebase"
+                imgSrc={api}
+                githubLink="https://github.com/tommimaki/GreenHelsinki"
               />
               <Project
                 title="Project 1"
