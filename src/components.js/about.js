@@ -1,5 +1,6 @@
 import React from "react";
 import skater1 from "../assets/skater1.png";
+import me from "../assets/me.jpeg";
 
 function About() {
   return (
@@ -25,7 +26,7 @@ function About() {
       <div className="w-full md:w-1/2 mb-4 mt-10 md:mb-0 flex items-center justify-center">
         <img
           className="mx-auto md:mx-0 rounded-full md:border-none border-4 border-white w-32 h-32 md:w-auto md:h-auto md:max-w-lg md:max-h-lg"
-          src={skater1}
+          src={me}
           alt="avatar"
         ></img>
       </div>
