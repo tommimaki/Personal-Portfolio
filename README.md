@@ -1,19 +1,8 @@
 
-Personal Portfolio
-This is a personal portfolio website built using React, Node.js, Nodemailer, and styled with Tailwind CSS. The website showcases your projects, skills, and experience, and includes a contact form for visitors to get in touch with you.
+# My Personal Portfolio
 
-Table of Contents
-Features
-Installation
-Usage
-Deployment
-License
-Features
-Responsive design built with Tailwind CSS
-Project showcase with filterable categories
-Contact form with email functionality using Nodemailer
-Node.js backend for handling contact form submissions
-Easy customization for personalization
+This is a personal portfolio website built using React, Node.js, Nodemailer, and styled with Tailwind CSS. The website showcases projects I've built, my skills, and experience, and a contact form for visitors to get in touch with me.
+
 
 # Getting Started with Create React App
 
