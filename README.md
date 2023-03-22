@@ -1,3 +1,9 @@
+
+# My Personal Portfolio
+
+This is a personal portfolio website built using React, Node.js, Nodemailer, and styled with Tailwind CSS. The website showcases projects I've built, my skills, and experience, and a contact form for visitors to get in touch with me.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
