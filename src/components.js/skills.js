@@ -41,6 +41,18 @@ function Skills() {
           <i className="devicon-git-plain colored text-5x l"></i>
           <p className="skill-card  text-lg leading-relaxed mt-2">Typescript</p>
         </div>
+        <div>
+          <i className="devicon-git-plain colored text-5x l"></i>
+          <p className="skill-card  text-lg leading-relaxed mt-2">Tailwind</p>
+        </div>
+        <div>
+          <i className="devicon-git-plain colored text-5x l"></i>
+          <p className="skill-card  text-lg leading-relaxed mt-2">Java</p>
+        </div>
+        <div>
+          <i className="devicon-git-plain colored text-5x l"></i>
+          <p className="skill-card  text-lg leading-relaxed mt-2">Springboot</p>
+        </div>
       </div>
     </section>
   );
