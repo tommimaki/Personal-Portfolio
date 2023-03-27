@@ -55,14 +55,14 @@ function App() {
               />
               <Project
                 title="Green Helsinki"
-                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegan restaurants, database and userauth in firebase"
+                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegan restaurants, database and user authentication hosted on firebase"
                 imgSrc={api}
                 githubLink="https://github.com/tommimaki/GreenHelsinki"
                 technologies={["React Native", "Firebase", "JavaScript"]}
               />
               <Project
                 title="In progress"
-                description="A skateshop onlineproject on the way"
+                description="A skateshop online store project on the way"
                 imgSrc="https://via.placeholder.com/300x200"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={["React Native", "Firebase", "JavaScript"]}
