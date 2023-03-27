@@ -1,11 +1,12 @@
 import React from "react";
 import skater1 from "../assets/skater1.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function About() {
   return (
     <section
       id="about"
-      className="my-12 flex flex-col items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
+      className=" flex h-screen flex-col pb-40 items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
         <h2 className="text-4xl font-semibold mb-4 md:mb-20 text-center md:text-left">
@@ -15,14 +16,35 @@ function About() {
           <p className="text-lg leading-relaxed text-center md:text-left">
             Hi, I'm Tommi, a full-stack developer with a passion for creating
             beautiful, efficient, and user-friendly applications.
-            <br /> <br /> I have experience in various modern web technologies
-            such as React, Node.js, and Tailwind CSS. In my spare time, I enjoy
-            learning new programming languages and exploring the latest trends
-            in software development.
+            <br /> <br /> In my spare time, I love skating and snowboarding, as
+            the Finnish weather allows.
+            <br />
+            <br />
+            See more of my work on my Github or shoot me a message on LinkedIn
+            or the email form below!
+            <br />
+            <div className="flex mt-4  p-2">
+              <a
+                href="https://github.com/tommimaki"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-4"
+              >
+                <FaGithub className="text-4xl text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tommi-maki/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-4"
+              >
+                <FaLinkedin className="text-4xl text-white" />
+              </a>
+            </div>
           </p>
         </div>
       </div>
-      <div className="w-full md:w-1/2 mb-4 mt-10 md:mb-0 flex items-center justify-center">
+      <div className="w-full md:w-1/2 mb-4 mt-2 md:mb-0 flex items-center justify-center">
         <img
           className="mx-auto md:mx-0 rounded-full md:border-none border-4 border-white w-32 h-32 md:w-auto md:h-auto md:max-w-lg md:max-h-lg"
           src={skater1}

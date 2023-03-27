@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <section id="skills" className="text-center my-12">
+    <section id="skills" className="text-center mt-40">
       <h2 className="text-4xl font-semibold text-center  mb-20 ">Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         <div>
@@ -51,7 +51,9 @@ function Skills() {
         </div>
         <div>
           <i className="devicon-git-plain colored text-5x l"></i>
-          <p className="skill-card  text-lg leading-relaxed mt-2">Springboot</p>
+          <p className="skill-card  text-lg leading-relaxed mt-2">
+            Material-UI
+          </p>
         </div>
       </div>
     </section>

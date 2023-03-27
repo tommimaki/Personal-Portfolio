@@ -32,7 +32,7 @@ function App() {
               {/* todo change the tab title */}
               <Project
                 title="Tommin Lainakaarat"
-                description="A luxury car rental Fullstack web app"
+                description="A luxury car rental Fullstack web app built with the MERN stack"
                 imgSrc={lainakaarat}
                 websiteLink="https://steady-lollipop-d552c8.netlify.app/demo-login"
                 githubLink="https://github.com/tommimaki/rentacar"
@@ -55,7 +55,7 @@ function App() {
               />
               <Project
                 title="Green Helsinki"
-                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegans restaurants, backend and user  authentication in firebase"
+                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegan restaurants, database and userauth in firebase"
                 imgSrc={api}
                 githubLink="https://github.com/tommimaki/GreenHelsinki"
                 technologies={["React Native", "Firebase", "JavaScript"]}
