@@ -23,30 +23,30 @@ function About() {
             See more of my work on my Github or shoot me a message on LinkedIn
             or the email form below!
             <br />
-            <div className="flex mt-4  p-2">
-              <a
-                href="https://github.com/tommimaki"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-4"
-              >
-                <FaGithub className="text-4xl text-white" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/tommi-maki/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-4"
-              >
-                <FaLinkedin className="text-4xl text-white" />
-              </a>
-            </div>
           </p>
+          <div className="flex my-6 justify-center  p-2">
+            <a
+              href="https://github.com/tommimaki"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-4"
+            >
+              <FaGithub className="text-4xl text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tommi-maki/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-4"
+            >
+              <FaLinkedin className="text-4xl text-white" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-full md:w-1/2 mb-4 mt-2 md:mb-0 flex items-center justify-center">
         <img
-          className="mx-auto md:mx-0 rounded-full md:border-none border-4 border-white w-32 h-32 md:w-auto md:h-auto md:max-w-lg md:max-h-lg"
+          className="mx-auto md:mx-0 rounded-full md:border-none border-4 border-white w-60 h-60 md:w-auto md:h-auto md:max-w-lg md:max-h-lg"
           src={skater1}
           alt="avatar"
         ></img>
