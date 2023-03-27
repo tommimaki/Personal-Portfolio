@@ -31,14 +31,16 @@ const Project = ({
             ))}
         </div>
         <div className="flex mt-4 mx-auto justify-center space-x-4">
-          <a
-            href={websiteLink}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-200"
-          >
-            Visit Website
-          </a>
+          {websiteLink && (
+            <a
+              href={websiteLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-200"
+            >
+              Visit Website
+            </a>
+          )}
 
           <a
             href={githubLink}

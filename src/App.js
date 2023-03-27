@@ -64,7 +64,6 @@ function App() {
                 title="In progress"
                 description="A skateshop onlineproject on the way"
                 imgSrc="https://via.placeholder.com/300x200"
-                websiteLink="https://github.com/tommimaki/Dekkikeisari"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={["React Native", "Firebase", "JavaScript"]}
               />
