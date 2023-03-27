@@ -34,7 +34,7 @@ function App() {
                 title="Tommin Lainakaarat"
                 description="A luxury car rental Fullstack web app"
                 imgSrc={lainakaarat}
-                websiteLink="https://steady-lollipop-d552c8.netlify.app/"
+                websiteLink="https://steady-lollipop-d552c8.netlify/demo-login"
                 githubLink="https://github.com/tommimaki/rentacar"
                 technologies={[
                   "React",
