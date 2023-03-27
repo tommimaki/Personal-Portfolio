@@ -34,7 +34,7 @@ function App() {
                 title="Tommin Lainakaarat"
                 description="A luxury car rental Fullstack web app"
                 imgSrc={lainakaarat}
-                websiteLink="https://steady-lollipop-d552c8.netlify/demo-login"
+                websiteLink="https://steady-lollipop-d552c8.netlify.app/demo-login"
                 githubLink="https://github.com/tommimaki/rentacar"
                 technologies={[
                   "React",
@@ -61,11 +61,11 @@ function App() {
                 technologies={["React Native", "Firebase", "JavaScript"]}
               />
               <Project
-                title="Project 1"
-                description="A brief description of Project 1. lorem"
+                title="In progress"
+                description="A skateshop onlineproject on the way"
                 imgSrc="https://via.placeholder.com/300x200"
-                websiteLink="https://project1.example.com"
-                githubLink="https://github.com/username/project1"
+                websiteLink="https://github.com/tommimaki/Dekkikeisari"
+                githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={["React Native", "Firebase", "JavaScript"]}
               />
             </div>
