@@ -18,7 +18,7 @@ function App() {
       <TitleAnimation />
       <Header />
       <div className="App min-h-screen bg-gray-900 text-gray-100">
-        <main className="container mx-auto px-4 py-12">
+        <main className="container mx-auto px-4 py-2">
           <About />
           <section className="text-center my-12">
             <h2 className="text-4xl font-semibold text-center  mb-10">
@@ -51,7 +51,7 @@ function App() {
                 imgSrc={goodmood}
                 websiteLink="https://bright-dragon-6739af.netlify.app/"
                 githubLink="https://github.com/tommimaki/GoodMood"
-                technologies={["Javascript", "React", "NodeJS"]}
+                technologies={["Javascript", "React", "Node.js"]}
               />
               <Project
                 title="Green Helsinki"
@@ -62,10 +62,17 @@ function App() {
               />
               <Project
                 title="In progress"
-                description="A skateshop online store project on the way"
+                description="A skateshop online store project im building currently"
                 imgSrc="https://via.placeholder.com/300x200"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
-                technologies={["React Native", "Firebase", "JavaScript"]}
+                technologies={[
+                  "React",
+                  "MySQL",
+                  "AWS",
+                  "TypeScript",
+                  "Node.js",
+                  "Redux",
+                ]}
               />
             </div>
           </section>
