@@ -20,7 +20,7 @@ function App() {
       <div className="App min-h-screen bg-gray-900 text-gray-100">
         <main className="container mx-auto px-4 py-2">
           <About />
-          <section className="text-center my-12">
+          <section className="text-center my-20">
             <h2 className="text-4xl font-semibold text-center  mb-10">
               Featured Projects
             </h2>

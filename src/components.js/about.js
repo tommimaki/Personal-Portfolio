@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id="about"
-      className="mt-4 flex h-screen flex-col pb-40 items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
+      className="mt-8 flex h-screen flex-col pb-40 items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
         <h2 className="text-4xl mt-56 font-semibold mb-4 md:mb-20 text-center md:text-left">
