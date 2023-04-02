@@ -6,14 +6,14 @@ function About() {
   return (
     <section
       id="about"
-      className="mt-4 sm:mt-20 flex h-screen flex-col pb-40 items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
+      className="mt-4 flex h-screen flex-col pb-40 items-center justify-center md:flex-row md:justify-between mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
-        <h2 className="text-4xl font-semibold mb-4 md:mb-20 text-center md:text-left">
+        <h2 className="text-4xl mt-56 font-semibold mb-4 md:mb-20 text-center md:text-left">
           About
         </h2>
-        <div className="w-full md:w-1/2 md:pl-6">
-          <p className="text-lg leading-relaxed text-center md:text-left">
+        <div className="w-full md:w-3/4 md:pl-6">
+          <p className="text-lg text-center md:text-left">
             Hi, I'm Tommi, a full-stack developer with a passion for creating
             beautiful, efficient, and user-friendly applications.
             <br /> <br /> In my spare time, I love skating and snowboarding, as
