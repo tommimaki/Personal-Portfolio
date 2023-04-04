@@ -44,7 +44,6 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <div className="w-full md:w-1/2 mb-4 mt-2 md:mb-0 flex items-center justify-center"> */}
       <div className="w-full md:w-1/2 md:mb-0 flex items-start lg:mt-28 justify-center md:items-center">
         <img
           className="mx-auto md:mx-0 rounded-full md:border-none border-4 border-white w-60 h-60 md:w-auto md:h-auto md:max-w-lg md:max-h-lg"
