@@ -47,7 +47,7 @@ function App() {
               />
               <Project
                 title="Good Mood"
-                description="A website made for a beauty studio, created with react frontend and node backend for mailing services"
+                description="website for a beauty studio"
                 imgSrc={goodmood}
                 websiteLink="https://bright-dragon-6739af.netlify.app/"
                 githubLink="https://github.com/tommimaki/GoodMood"
