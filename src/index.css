@@ -2,6 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base {
+  html {
+    /* font-family: Proxima Nova, system-ui, sans-serif; */
+    mono: ui-monospace, SFMono-Regular;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,5 +26,11 @@
 }
 
 .skill-card:hover {
+  color: rgb(163 230 53);
   @apply transform scale-110;
+}
+
+.logo:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
 }

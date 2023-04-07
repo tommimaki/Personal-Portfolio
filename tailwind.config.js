@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular"],
       },
       backgroundColor: {
-        "blue-600": "#1e3a8a",
+        "blue-400": "#1e3a8a",
       },
     },
   },

@@ -32,11 +32,11 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link mx-4 text-xl cursor-pointer text-white group-hover:text-gray-300"
+                className="nav-link mx-4 text-xl cursor-pointer  text-white group-hover:text-gray-300"
               >
                 {name}
               </Link>
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-white rounded transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-white rounded transition-all duration-300   group-hover:w-full"></span>
             </div>
           ))}
         </nav>
@@ -74,7 +74,7 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link text-xl cursor-pointer text-white group-hover:text-gray-300 px-4 py-2 rounded-md"
+                className="nav-link text-xl cursor-pointer text-white  group-hover:text-lime-400 px-4 py-2 rounded-md"
                 onClick={toggleMenu}
               >
                 {name}

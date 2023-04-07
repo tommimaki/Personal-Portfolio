@@ -16,7 +16,8 @@ const Project = ({
         <img
           src={imgSrc}
           alt={`${title} preview`}
-          className="w-auto h-[250px]  h-auto mb-4 rounded mx-auto justify-center"
+          className="w-auto max-h-[200px] mb-4 rounded mx-auto justify-center"
+          style={{ maxWidth: "100%" }}
         />
 
         <div className="mb-4">

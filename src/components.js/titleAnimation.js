@@ -72,15 +72,15 @@ const TitleAnimation = () => {
     >
       <h1
         ref={titleRef}
-        className="text-5xl font-bold"
+        className="text-5xl font-bold text-lime-400"
         data-value="Tommi Mäki"
-        style={{ cursor: "default", color: "white" }}
+        style={{ cursor: "default" }}
       >
         Tommi Mäki
       </h1>
       <h2
         ref={subtitleRef}
-        className="text-2xl font-semibold mt-3"
+        className="text-2xl font-semibold mt-3 text-lime-400"
         data-value="My Portfolio"
         style={{ color: "white" }}
       >
