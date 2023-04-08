@@ -1,5 +1,4 @@
 import React from "react";
-import skater1 from "../assets/skater1.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function About() {
