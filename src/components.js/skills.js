@@ -47,7 +47,7 @@ function Skills() {
         </div>
         <div>
           <i className="devicon-git-plain colored text-5x l"></i>
-          <p className="skill-card  text-lg leading-relaxed mt-2">Java</p>
+          <p className="skill-card  text-lg leading-relaxed mt-2">SQL</p>
         </div>
         <div>
           <i className="devicon-git-plain colored text-5x l"></i>

@@ -3,6 +3,7 @@ import React from "react";
 import goodmood from "./assets/goodmood.png";
 import lainakaarat from "./assets/lainakaarat.png";
 import api from "./assets/api.png";
+import Dekkikeisari from "./assets/Dekkikeisari.png";
 import Contact from "./components.js/contact";
 import Project from "./components.js/project";
 import Skills from "./components.js/skills";
@@ -30,6 +31,23 @@ function App() {
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6"
             >
               {/* todo change the tab title */}
+              <Project
+                title="Dekkikeisari"
+                description="A fullstack web application for an online store selling skateboards and clothes"
+                imgSrc={Dekkikeisari}
+                websiteLink="https://cerulean-marshmallow-946350.netlify.app"
+                githubLink="https://github.com/tommimaki/Dekkikeisari"
+                technologies={[
+                  "React",
+                  "MySQL",
+                  "AWS",
+                  "TypeScript",
+                  "Node.js",
+                  "Redux",
+                  "NodeJS",
+                  "Express",
+                ]}
+              />
               <Project
                 title="Tommin Lainakaarat"
                 description="A luxury car rental Fullstack web app built with the MERN stack"
@@ -59,20 +77,6 @@ function App() {
                 imgSrc={api}
                 githubLink="https://github.com/tommimaki/GreenHelsinki"
                 technologies={["React Native", "Firebase", "JavaScript"]}
-              />
-              <Project
-                title="In progress"
-                description="A skateshop online store project im building currently"
-                imgSrc="https://via.placeholder.com/300x200"
-                githubLink="https://github.com/tommimaki/Dekkikeisari"
-                technologies={[
-                  "React",
-                  "MySQL",
-                  "AWS",
-                  "TypeScript",
-                  "Node.js",
-                  "Redux",
-                ]}
               />
             </div>
           </section>
