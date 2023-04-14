@@ -30,12 +30,12 @@ function App() {
               id="projects"
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6"
             >
-              {/* todo change the tab title */}
               <Project
                 title="Dekkikeisari"
-                description="A fullstack web application for an online store selling skateboards and clothes"
+                description="A fullstack webstore for a skateshop, admin demo"
                 imgSrc={Dekkikeisari}
-                websiteLink="https://cerulean-marshmallow-946350.netlify.app"
+                // websiteLink="https://cerulean-marshmallow-946350.netlify.app"
+                websiteLink="https://cerulean-marshmallow-946350.netlify.app/signin?demoAdminLogin=true"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={[
                   "React",
@@ -44,13 +44,12 @@ function App() {
                   "TypeScript",
                   "Node.js",
                   "Redux",
-                  "NodeJS",
                   "Express",
                 ]}
               />
               <Project
                 title="Tommin Lainakaarat"
-                description="A luxury car rental Fullstack web app built with the MERN stack"
+                description="A luxury car rental Fullstack web app built with the MERN stack, admin demo"
                 imgSrc={lainakaarat}
                 websiteLink="https://steady-lollipop-d552c8.netlify.app/demo-login"
                 githubLink="https://github.com/tommimaki/rentacar"
