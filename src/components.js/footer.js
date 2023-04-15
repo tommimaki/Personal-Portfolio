@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,16 +21,10 @@ const Footer = () => {
       >
         <FaLinkedin className="text-4xl text-white" />
       </a>
-      <a
-        href="https://wa.me/358405467598"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-4"
-      >
-        <FaWhatsapp className="text-4xl text-white" />
-      </a>
+
       <p className="text-white text-lg">
-        &copy; {new Date().getFullYear()} Tommimaki. All rights reserved.
+        &copy; {new Date().getFullYear()} <br />
+        tommimaki97@outlook.com
       </p>
     </footer>
   );

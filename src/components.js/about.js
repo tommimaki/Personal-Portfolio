@@ -14,9 +14,12 @@ function About() {
         <div className="w-full md:w-3/4 md:pl-6">
           <p className="text-lg text-center">
             I'm a full-stack developer with a passion for creating beautiful,
-            efficient, and user-friendly applications.
-            <br /> <br /> In my spare time, I love skating and snowboarding, as
-            the Finnish weather allows.
+            efficient, and user-friendly web applications.
+            <br />
+            <br />
+            At the moment I'm looking for an{" "}
+            <span className="text-customGreen">internship</span> or a junior
+            level position preferably in web development.
             <br />
             <br />
             See more of my work on my Github or shoot me a message on LinkedIn

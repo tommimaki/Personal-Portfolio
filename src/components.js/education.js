@@ -16,8 +16,8 @@ function Education() {
         >
           Haaga-Helia University of Applied Sciences
         </a>
-        . My major is Software Development, and I am set to graduate in December
-        2023.
+        . <br /> My major is Software Development, and I am set to graduate in
+        December 2023.
       </p>
     </section>
   );
