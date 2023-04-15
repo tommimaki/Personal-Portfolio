@@ -32,9 +32,8 @@ function App() {
             >
               <Project
                 title="Dekkikeisari"
-                description="A fullstack webstore for a skateshop, admin demo"
+                description="A fullstack webstore for a skateshop"
                 imgSrc={Dekkikeisari}
-                // websiteLink="https://cerulean-marshmallow-946350.netlify.app"
                 websiteLink="https://cerulean-marshmallow-946350.netlify.app/signin?demoAdminLogin=true"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={[
@@ -49,7 +48,7 @@ function App() {
               />
               <Project
                 title="Tommin Lainakaarat"
-                description="A luxury car rental Fullstack web app built with the MERN stack, admin demo"
+                description="A car rental Fullstack web app built with the MERN stack"
                 imgSrc={lainakaarat}
                 websiteLink="https://steady-lollipop-d552c8.netlify.app/demo-login"
                 githubLink="https://github.com/tommimaki/rentacar"
@@ -58,13 +57,13 @@ function App() {
                   "Tailwind",
                   "Typescript",
                   "MongoDB",
-                  "NodeJS",
+                  "Node.js",
                   "Express",
                 ]}
               />
               <Project
                 title="Good Mood"
-                description="website for a beauty studio"
+                description="Website for a beauty studio. Built with React"
                 imgSrc={goodmood}
                 websiteLink="https://bright-dragon-6739af.netlify.app/"
                 githubLink="https://github.com/tommimaki/GoodMood"
