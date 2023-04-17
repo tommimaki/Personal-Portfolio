@@ -21,7 +21,13 @@ import { FaJava } from "react-icons/fa";
 function Skills() {
   return (
     <section id="skills" className="text-center mt-40">
-      <h2 className="text-4xl font-semibold text-center mb-20">Skills</h2>
+      <div className="flex flex-col items-center">
+        <h2 className="text-4xl font-semibold text-center mb-20">
+          Skills
+          <hr className="border-1 mt-1 w-full border-gray-300" />
+        </h2>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Front-end skills */}
         <div className="border rounded-lg shadow-md p-4">

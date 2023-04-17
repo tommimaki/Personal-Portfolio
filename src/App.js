@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-import Contact from "./components/contact";
-import Skills from "./components/skills";
-import Header from "./components/header";
-import Education from "./components/education";
-import About from "./components/about";
-import Footer from "./components/footer";
-import TitleAnimation from "./components/titleAnimation";
-import ScrollToTopArrow from "./components/ScrollToTop";
-import Projects from "./components/projects/projects";
+import Contact from "./components/sections/contact";
+import Skills from "./components/sections/skills";
+import Header from "./components/outlay/header";
+import Education from "./components/sections/education";
+import About from "./components/sections/about";
+import Footer from "./components/outlay/footer";
+import TitleAnimation from "./components/outlay/titleAnimation";
+import ScrollToTopArrow from "./components/outlay/ScrollToTop";
+import Projects from "./components/sections/projects";
 
 function App() {
   const [showScrollToTopArrow, setShowScrollToTopArrow] = useState(false);
@@ -29,10 +29,7 @@ function App() {
       <div className="App min-h-screen bg-gray-900 text-gray-100">
         <main className="container mx-auto px-4 py-2">
           <About />
-          <section className="text-center mb-20">
-            <Projects />
-          </section>
-
+          <Projects />
           <Skills />
           <Education />
           <Contact />

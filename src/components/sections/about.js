@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function About() {
   return (
@@ -23,7 +24,18 @@ function About() {
             <br />
             <br />
             See more of my work on my Github or shoot me a message on LinkedIn
-            or the email form below!
+            or the email form{" "}
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="text-customGreen hover:underline cursor-pointer"
+            >
+              below
+            </Link>
+            !
             <br />
           </p>
           <div className="flex my-6 justify-center p-2">

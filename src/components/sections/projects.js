@@ -69,15 +69,18 @@
 
 // export default Projects;
 import React from "react";
-import Project from "./project";
-import projectData from "./projectData";
+import Project from "../projects/project";
+import projectData from "../projects/projectData";
 
 const Projects = () => {
   return (
     <section className="text-center mb-20">
-      <h2 className="text-4xl font-semibold text-center mb-10">
-        Featured Projects
-      </h2>
+      <div className="flex flex-col items-center">
+        <h2 className="text-4xl font-semibold text-center mb-20">
+          Featured Projects
+          <hr className="border-1 mt-1 flex-grow  border-gray-300" />
+        </h2>
+      </div>
 
       <div
         id="projects"
