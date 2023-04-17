@@ -1,5 +1,6 @@
-import React from "react";
-import { FaGithub, FaInternetExplorer } from "react-icons/fa";
+import React, { useState } from "react";
+import ProjectModal from "./ProjectModal";
+import { FaGithub, FaInternetExplorer, FaPlus } from "react-icons/fa";
 const Project = ({
   title,
   description,
@@ -8,6 +9,8 @@ const Project = ({
   githubLink,
   technologies,
 }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   return (
     <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <div className="flex-grow p-4 pb-0">
@@ -28,10 +31,18 @@ const Project = ({
           <p className="font-normal text-gray-700 pb-2 dark:text-gray-400">
             {description}
           </p>
+          <button onClick={() => setModalIsOpen(true)}>
+            <div className="flex items-center">
+              <FaPlus />
+              <p className="ml-2 ">Read more </p>
+            </div>
+          </button>
+
           {/* <hr className="border-1 w-full border-gray-300 my-2" /> */}
         </div>
       </div>
-      <div className="ml-4 flex flex-wrap mt-auto">
+      <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />
+      <div className="ml-4 flex flex-wrap flex-wrap-reverse flex-reverse mt-auto">
         {technologies &&
           technologies.map((tech, index) => (
             <span
@@ -41,8 +52,8 @@ const Project = ({
               {tech}
             </span>
           ))}
-        <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />
       </div>
+      <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />
       <div className="pb-4">
         <div className="flex justify-center space-x-4">
           {websiteLink && (
@@ -68,6 +79,14 @@ const Project = ({
           </a>
         </div>
       </div>
+      <ProjectModal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        title={title}
+        description={description}
+        technologies={technologies}
+        img={imgSrc}
+      />
     </div>
   );
 };

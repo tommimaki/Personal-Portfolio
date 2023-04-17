@@ -47,7 +47,7 @@ const projectData = [
   },
   {
     title: "Green Helsinki",
-    description: "A React Native application for eco tourists Helsinki",
+    description: "A React Native application for eco tourists in Helsinki",
     imgSrc: api,
     githubLink: "https://github.com/tommimaki/GreenHelsinki",
     technologies: ["React Native", "Firebase", "JavaScript"],
