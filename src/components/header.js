@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800 w-full p-4 flex items-center justify-center sticky top-0 z-50">
+    <header className="bg-gray-800 w-full p-4 flex items-center justify-center  top-0 z-50">
       <div className="flex items-center justify-center w-full">
         <nav
           className={`flex items-center justify-center ${

@@ -5,7 +5,6 @@ import {
   SiCss3,
   SiJavascript,
   SiReact,
-  // SiGit,
   SiTypescript,
   SiTailwindcss,
   SiExpress,
@@ -14,7 +13,10 @@ import {
   SiNodedotjs,
   SiAmazonaws,
   SiMysql,
+  SiSass,
 } from "react-icons/si";
+
+import { FaJava } from "react-icons/fa";
 
 function Skills() {
   return (
@@ -55,6 +57,10 @@ function Skills() {
               <SiMui className="text-5xl skill-card" />
               <p className="text-lg leading-relaxed mt-2">Material UI</p>
             </div>
+            <div className="flex flex-col justify-center items-center">
+              <SiSass className="text-5xl skill-card" />
+              <p className="text-lg leading-relaxed mt-2">Sass</p>
+            </div>
           </div>
         </div>
         {/* Back-end skills */}
@@ -90,6 +96,10 @@ function Skills() {
             <div className="flex flex-col justify-center items-center">
               <SiAmazonaws className="text-5xl skill-card " />
               <p className=" text-lg leading-relaxed mt-2">AWS</p>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <FaJava className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">Java</p>
             </div>
           </div>
         </div>

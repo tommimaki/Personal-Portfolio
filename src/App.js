@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import goodmood from "./assets/goodmood.png";
 import lainakaarat from "./assets/lainakaarat.png";
 import api from "./assets/api.png";
-import Dekkikeisari from "./assets/Dekkikeisari.png";
-import Contact from "./components.js/contact";
-import Project from "./components.js/project";
-import Skills from "./components.js/skills";
-import Header from "./components.js/header";
-import Education from "./components.js/education";
-import About from "./components.js/about";
-import Footer from "./components.js/footer";
-import TitleAnimation from "./components.js/titleAnimation";
+import dekkikeisari from "./assets/dekkikeisari.jpg";
+import Contact from "./components/contact";
+import Project from "./components/project";
+import Skills from "./components/skills";
+import Header from "./components/header";
+import Education from "./components/education";
+import About from "./components/about";
+import Footer from "./components/footer";
+import TitleAnimation from "./components/titleAnimation";
+import ScrollToTopArrow from "./components/ScrollToTop";
 
 function App() {
+  const [showScrollToTopArrow, setShowScrollToTopArrow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolledPastScreen = window.scrollY > window.innerHeight;
+      setShowScrollToTopArrow(isScrolledPastScreen);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
       <TitleAnimation />
@@ -21,19 +33,19 @@ function App() {
       <div className="App min-h-screen bg-gray-900 text-gray-100">
         <main className="container mx-auto px-4 py-2">
           <About />
-          <section className="text-center my-20">
+          <section className="text-center mb-20">
             <h2 className="text-4xl font-semibold text-center  mb-10">
               Featured Projects
             </h2>
 
             <div
               id="projects"
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6"
+              className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-items-center"
             >
               <Project
                 title="Dekkikeisari"
                 description="A fullstack webstore for a skateshop"
-                imgSrc={Dekkikeisari}
+                imgSrc={dekkikeisari}
                 websiteLink="https://cerulean-marshmallow-946350.netlify.app/signin?demoAdminLogin=true"
                 githubLink="https://github.com/tommimaki/Dekkikeisari"
                 technologies={[
@@ -71,7 +83,7 @@ function App() {
               />
               <Project
                 title="Green Helsinki"
-                description="A React Native mobile application for eco tourists in helsinki, shows biking paths, thrift shops and vegan restaurants, database and user authentication hosted on firebase"
+                description="A React Native application for eco tourists Helsinki"
                 imgSrc={api}
                 githubLink="https://github.com/tommimaki/GreenHelsinki"
                 technologies={["React Native", "Firebase", "JavaScript"]}
@@ -87,6 +99,7 @@ function App() {
           <Footer />
         </footer>
       </div>
+      {showScrollToTopArrow && <ScrollToTopArrow />}
     </div>
   );
 }
