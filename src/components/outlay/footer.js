@@ -14,7 +14,6 @@ const Footer = () => {
           >
             <FaGithub className="text-4xl text-white" />
           </a>
-
           <a
             href="https://www.linkedin.com/in/tommi-maki/"
             target="_blank"
