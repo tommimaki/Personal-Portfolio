@@ -9,11 +9,10 @@ const Project = ({
   technologies,
 }) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+    <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <div className="flex-grow p-4 pb-0">
         <a href={websiteLink} target="_blank" rel="noreferrer">
           <img
-            // className="rounded-t-lg w-auto max-h-[200px] mb-4 align-middle justify-center"
             className="rounded-t-lg w-auto max-h-[200px] mb-4 mx-auto"
             src={imgSrc}
             alt={`${title} preview`}
