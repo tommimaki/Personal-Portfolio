@@ -43,7 +43,7 @@ const projectData = [
     imgSrc: goodmood,
     websiteLink: "https://bright-dragon-6739af.netlify.app/",
     githubLink: "https://github.com/tommimaki/GoodMood",
-    technologies: ["Javascript", "React", "Node.js"],
+    technologies: ["Javascript", "React", "Node.js", "CSS"],
   },
   {
     title: "Green Helsinki",
