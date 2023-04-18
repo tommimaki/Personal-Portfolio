@@ -43,7 +43,7 @@ const Project = ({
         </div>
       </div>
       <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />
-      <div className="flex px-12  flex-wrap-reverse flex-reverse mt-auto">
+      <div className="flex px-2 ml-12  flex-wrap-reverse flex-reverse mt-auto">
         {technologies &&
           technologies.map((tech, index) => (
             <span

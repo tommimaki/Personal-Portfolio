@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-#1F2937 p-4 mt-12 flex justify-center items-center">
       <div className="flex justify-center items-center flex-wrap">
-        <div className="flex mb-2">
+        <div className="flex pl-5 mb-2">
           <a
             href="https://github.com/tommimaki"
             target="_blank"

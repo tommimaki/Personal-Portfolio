@@ -12,7 +12,7 @@ function About() {
         <h1 className="text-5xl font-semibold mb-4 md:mb-10 text-center">
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
-        <div className="w-full md:w-3/4 md:pl-6">
+        <div className="w-full md:w-3/4 px-4">
           <p className="text-lg">
             I'm a full-stack developer with a passion for creating beautiful,
             efficient, and user-friendly web applications.

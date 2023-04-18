@@ -54,7 +54,7 @@ const ProjectModal = ({
           className="w-full h-48 mb-4 object-cover rounded"
         />
         <p className="mb-4 text-white">{longDescription}</p>
-        <div className="flex justify-center space-x-4 mb-4">
+        <div className="flex justify-center md:space-x-4 space-x-1 mb-4">
           {websiteLink && (
             <a
               href={websiteLink}
@@ -82,7 +82,7 @@ const ProjectModal = ({
               href={backendGithubLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
+              className="inline-flex items-center px-2 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
             >
               Backend Repo
               <FaGithub className="text-lg ml-2 text-white" />
@@ -114,10 +114,3 @@ const ProjectModal = ({
 };
 
 export default ProjectModal;
-// useEffect(() => {
-//   if (isOpen) {
-//     document.body.style.overflow = "hidden";
-//   } else {
-//     document.body.style.overflow = "visible";
-//   }
-// }, [isOpen]);
