@@ -20,7 +20,10 @@ import { FaJava } from "react-icons/fa";
 
 function Skills() {
   return (
-    <section id="skills" className="text-center mt-40">
+    <section
+      id="skills"
+      className="text-center items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
+    >
       <div className="flex flex-col items-center">
         <h2 className="text-4xl font-semibold text-center mb-20">
           Skills
@@ -31,7 +34,7 @@ function Skills() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Front-end skills */}
         <div className="border rounded-lg shadow-md p-4">
-          <h3 className="text-lg font-medium mb-2 uppercase tracking-wide">
+          <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
             Front-end
           </h3>
           <div className="grid grid-cols-2 gap-4">
@@ -71,7 +74,7 @@ function Skills() {
         </div>
         {/* Back-end skills */}
         <div className="border rounded-lg shadow-md p-4">
-          <h3 className="text-lg font-medium mb-2 uppercase tracking-wide">
+          <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
             Back-end
           </h3>
           <div className="grid grid-cols-2 gap-4">

@@ -6,14 +6,14 @@ function About() {
   return (
     <section
       id="about"
-      className="flex h-screen flex-col items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
+      className="flex h-[calc(100vh-28px)] flex-col items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
         <h1 className="text-5xl font-semibold mb-4 md:mb-10 text-center">
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
         <div className="w-full md:w-3/4 md:pl-6">
-          <p className="text-lg text-center">
+          <p className="text-lg">
             I'm a full-stack developer with a passion for creating beautiful,
             efficient, and user-friendly web applications.
             <br />

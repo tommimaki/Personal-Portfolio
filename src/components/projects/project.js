@@ -37,17 +37,16 @@ const Project = ({
               <p className="ml-2 ">Read more </p>
             </div>
           </button>
-
           {/* <hr className="border-1 w-full border-gray-300 my-2" /> */}
         </div>
       </div>
       <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />
-      <div className="ml-4 flex flex-wrap flex-wrap-reverse flex-reverse mt-auto">
+      <div className="flex px-12  flex-wrap-reverse flex-reverse mt-auto">
         {technologies &&
           technologies.map((tech, index) => (
             <span
               key={index}
-              className="inline-block bg-gray-600 text-gray-100 px-2 py-1 rounded mr-2 mb-2 text-sm"
+              className="inline-block  bg-gray-600 text-gray-100 px-2 py-1 rounded mr-2 mb-2 text-sm"
             >
               {tech}
             </span>
