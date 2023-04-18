@@ -8,26 +8,28 @@ const Project = ({
   websiteLink,
   githubLink,
   technologies,
+  longDescription,
+  features,
+  backendGithubLink,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <div className="flex-grow p-4 pb-0">
-        <a href={websiteLink} target="_blank" rel="noreferrer">
-          <img
-            className="rounded-t-lg w-auto max-h-[200px] mb-4 mx-auto"
-            src={imgSrc}
-            alt={`${title} preview`}
-            style={{ maxWidth: "100%" }}
-          />
-        </a>
+        <img
+          className="rounded-t-lg w-auto max-h-[200px] mb-4 mx-auto cursor-pointer"
+          src={imgSrc}
+          alt={`${title} preview`}
+          style={{ maxWidth: "100%" }}
+          onClick={() => setModalIsOpen(true)}
+        />
+
         <div className="p-2 flex items-center flex-col">
-          <a href={websiteLink} target="_blank" rel="noreferrer">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
-              {title}
-            </h3>
-          </a>
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
+            {title}
+          </h3>
+
           <p className="font-normal text-gray-700 pb-2 dark:text-gray-400">
             {description}
           </p>
@@ -85,6 +87,11 @@ const Project = ({
         description={description}
         technologies={technologies}
         img={imgSrc}
+        longDescription={longDescription}
+        features={features}
+        backendGithubLink={backendGithubLink}
+        githubLink={githubLink}
+        websiteLink={websiteLink}
       />
     </div>
   );

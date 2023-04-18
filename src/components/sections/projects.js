@@ -21,10 +21,13 @@ const Projects = () => {
             key={index}
             title={project.title}
             description={project.description}
+            longDescription={project.longDescription}
             imgSrc={project.imgSrc}
             websiteLink={project.websiteLink}
             githubLink={project.githubLink}
             technologies={project.technologies}
+            features={project.features}
+            backendGithubLink={project.backendGithubLink}
           />
         ))}
       </div>
