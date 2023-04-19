@@ -9,7 +9,7 @@ const projectData = [
     title: "Dekkikeisari",
     description: "A fullstack webstore for a skateshop",
     longDescription:
-      "Dekkikeisari is a fullstack skateshop webstore offering extensive features for customers and administrators. The frontend, built with React, Redux, TypeScript, and Tailwind CSS, includes product listing, filtering, user authentication, shopping cart, and an admin panel.\n\nNotable features include category-based filtering for easy product browsing and user authentication for profile access and order history. The shopping cart allows secure checkouts, and the admin panel enables inventory and order management. The application uses various libraries, ensuring responsiveness and functionality.\n\n",
+      "Dekkikeisari is a fullstack skateshop webstore. The frontend is built with React, Redux, TypeScript, and Tailwind CSS, includes product listing, filtering, user authentication for customer and admin, shopping cart and profile page, and an admin panel.\n The admin panel enables inventory, user, mailinglist, and order management. The application uses various libraries, ensuring responsiveness and functionality.\n\n The back is built with Node.js and Express, the App uses MySQL database and databucket on AWS for saving data and images",
     imgSrc: dekkikeisari,
     websiteLink:
       "https://cerulean-marshmallow-946350.netlify.app/signin?demoAdminLogin=true",
