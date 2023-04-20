@@ -35,6 +35,7 @@ function Skills() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6"> */}
         {/* Front-end skills */}
         <div className="border rounded-lg shadow-md p-4">
           <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
@@ -111,7 +112,7 @@ function Skills() {
             </div>
           </div>
         </div>
-        <div className="border rounded-lg shadow-md p-4 lg:col-span-2 lg:row-span-2">
+        <div className="border rounded-lg shadow-md p-4 sm:col-span-2 lg:row-span-2">
           <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
             DevOps
           </h3>
