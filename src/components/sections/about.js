@@ -9,14 +9,28 @@ function About() {
       className="flex h-[calc(100vh-28px)] flex-col items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
-        <h1 className="text-5xl font-semibold mb-4 md:mb-10 text-center">
+        <h1 className="text-xl sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
         <div className="w-full md:w-3/4 px-4">
-          <p className="text-lg">
+          <p className="text-lg sm:text-2xl ">
             I'm a full-stack developer with a passion for creating beautiful,
             efficient, and user-friendly web applications.
             <br />
+            <br />
+            <p className="">
+              I am currently studying Business Information Technology at{" "}
+              <a
+                href="https://www.haaga-helia.fi/fi/degree-programme-business-information-technology-bba#:~:text=or%20minor%20studies%3A-,Software%20Development,-Learning%20paths%3A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white-500 hover:text-customGreen hover:underline"
+              >
+                Haaga-Helia University of Applied Sciences
+              </a>
+              . <br /> My major is Software Development, and I am set to
+              graduate in December 2023.
+            </p>
             <br />
             At the moment I'm looking for an{" "}
             <span className="text-customGreen">internship</span> or a junior

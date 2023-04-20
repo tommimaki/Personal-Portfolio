@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Contact from "./components/sections/contact";
 import Skills from "./components/sections/skills";
 import Header from "./components/outlay/header";
-import Education from "./components/sections/education";
 import About from "./components/sections/about";
 import Footer from "./components/outlay/footer";
 import TitleAnimation from "./components/outlay/titleAnimation";
@@ -31,7 +30,6 @@ function App() {
           <About />
           <Projects />
           <Skills />
-          <Education />
           <Contact />
         </main>
         <footer className="bg-#1F2937 p-4 mt-12 flex justify-center">

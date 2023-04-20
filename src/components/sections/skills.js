@@ -14,6 +14,9 @@ import {
   SiAmazonaws,
   SiMysql,
   SiSass,
+  SiCypress,
+  SiDocker,
+  SiJest,
 } from "react-icons/si";
 
 import { FaJava } from "react-icons/fa";
@@ -103,12 +106,31 @@ function Skills() {
               <p className="text-lg leading-relaxed mt-2">JavaScript</p>
             </div>
             <div className="flex flex-col justify-center items-center">
+              <FaJava className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">Java</p>
+            </div>
+          </div>
+        </div>
+        <div className="border rounded-lg shadow-md p-4 lg:col-span-2 lg:row-span-2">
+          <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
+            DevOps
+          </h3>
+          <div className="grid grid-cols-4 gap-4">
+            <div className="flex flex-col justify-center items-center">
               <SiAmazonaws className="text-5xl skill-card " />
               <p className=" text-lg leading-relaxed mt-2">AWS</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <FaJava className="text-5xl skill-card " />
-              <p className=" text-lg leading-relaxed mt-2">Java</p>
+              <SiCypress className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">Cypress</p>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <SiDocker className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">Docker</p>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <SiJest className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">Jest</p>
             </div>
           </div>
         </div>

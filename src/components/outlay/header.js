@@ -21,7 +21,6 @@ const Header = () => {
             { name: "About", id: "about" },
             { name: "Projects", id: "projects" },
             { name: "Skills", id: "skills" },
-            { name: "Education", id: "education" },
             { name: "Contact", id: "contact" },
           ].map(({ name, id }) => (
             <div key={id} className="relative group hidden md:block">
