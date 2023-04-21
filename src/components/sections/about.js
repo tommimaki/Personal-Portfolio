@@ -6,10 +6,10 @@ function About() {
   return (
     <section
       id="about"
-      className="flex h-[calc(100vh-28px)] flex-col items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
+      className="flex h-[calc(100vh-28px)]   flex-col items-center justify-center md:flex-row md:justify-center my-10  mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
-        <h1 className="text-xl sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
+        <h1 className="text-3xl sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
         <div className="w-full md:w-3/4 px-4">

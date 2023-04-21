@@ -17,6 +17,9 @@ import {
   SiCypress,
   SiDocker,
   SiJest,
+  SiGit,
+  SiGithub,
+  SiNetlify,
 } from "react-icons/si";
 
 import { FaJava } from "react-icons/fa";
@@ -116,7 +119,7 @@ function Skills() {
           <h3 className="text-lg font-medium mb-6 uppercase tracking-wide">
             DevOps
           </h3>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div className="flex flex-col justify-center items-center">
               <SiAmazonaws className="text-5xl skill-card " />
               <p className=" text-lg leading-relaxed mt-2">AWS</p>
@@ -133,6 +136,19 @@ function Skills() {
               <SiJest className="text-5xl skill-card " />
               <p className=" text-lg leading-relaxed mt-2">Jest</p>
             </div>
+            <div className="flex flex-col justify-center items-center">
+              <SiGithub className="text-5xl skill-card " />
+              <p className=" text-lg leading-relaxed mt-2">GitHub</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <SiGit className="text-5xl skill-card " />
+              <p className="text-lg leading-relaxed mt-2">Git</p>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <SiNetlify className="text-5xl skill-card " />
+              <p className="text-lg leading-relaxed mt-2">Netlify</p>
+            </div>
           </div>
         </div>
       </div>
@@ -141,8 +157,3 @@ function Skills() {
 }
 
 export default Skills;
-
-// <div className="flex flex-col justify-center items-center">
-//   <SiGit className="text-5xl skill-card " />
-//   <p className="text-lg leading-relaxed mt-2">Git</p>
-// </div>
