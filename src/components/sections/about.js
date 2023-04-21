@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id="about"
-      className="flex h-[calc(100vh-28px)]   flex-col items-center justify-center md:flex-row md:justify-center my-10  mx-auto max-w-5xl"
+      className="flex h-[calc(100vh-28px)]   flex-col items-center justify-center md:flex-row md:justify-center my-20 sm:my-10  mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
         <h1 className="text-3xl sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
