@@ -13,7 +13,7 @@ function About() {
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
         <div className="w-full md:w-3/4 px-4">
-          <p className="text-lg sm:text-2xl ">
+          <p className="text-lg sm:text-xl ">
             I'm a full-stack developer with a passion for creating beautiful,
             efficient, and user-friendly web applications.
             <br />

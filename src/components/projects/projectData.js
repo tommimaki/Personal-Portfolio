@@ -37,7 +37,7 @@ const projectData = [
     title: "Tommin Lainakaarat",
     description: "A car rental Fullstack web app built with the MERN stack",
     longDescription:
-      "A car rental website with a frontend primarily built using React and Tailwind CSS. The backend built with Node.js, Express.js, and MongoDB, offers RESTful API endpoints for user authentication, profile data, car data, and reservation data. Features include CRUD functions for reservations, users, and cars, JSON Web Token authentication, NoSQL MongoDB data storage, Supertest for API route testing, and Multer for image uploads. Combined with frontend technologies such as React, Tailwind CSS, Full Calendar, React Router Dom 6, and Axios, the website delivers a seamless and stylish luxury car rental experience.",
+      "A car rental website with a frontend primarily built using React and Tailwind CSS. The backend built with Node.js, Express.js, and MongoDB, offers RESTful API endpoints for user authentication, profile data, car data, and reservation data. Features include CRUD functions for reservations, users, and cars, JSON Web Token authentication, NoSQL MongoDB data storage, Supertest for API route testing, and Multer for image uploads. Combined with frontend technologies such as React, Tailwind CSS, Full Calendar, React Router Dom 6, and Axios, the website delivers a seamless car rental experience.",
     imgSrc: lainakaarat,
     websiteLink: "https://steady-lollipop-d552c8.netlify.app/demo-login",
     githubLink: "https://github.com/tommimaki/rentacar",
