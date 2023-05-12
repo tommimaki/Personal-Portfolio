@@ -11,6 +11,8 @@ const Project = ({
   longDescription,
   features,
   backendGithubLink,
+  adminSiteLink,
+  imgSrcs,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -26,17 +28,17 @@ const Project = ({
         />
 
         <div className="p-2 flex items-center flex-col">
-          <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900 font-header dark:text-white mb-2">
             {title}
           </h3>
 
-          <p className="font-normal text-gray-700 pb-2 dark:text-gray-400">
+          <p className="font-normal font-text text-gray-700 pb-2 font-text dark:text-gray-400">
             {description}
           </p>
           <button onClick={() => setModalIsOpen(true)}>
             <div className="flex items-center">
               <FaPlus />
-              <p className="ml-2 ">Read more </p>
+              <p className="ml-2 font-text ">Read more </p>
             </div>
           </button>
           {/* <hr className="border-1 w-full border-gray-300 my-2" /> */}
@@ -48,7 +50,7 @@ const Project = ({
           technologies.map((tech, index) => (
             <span
               key={index}
-              className="inline-block  bg-gray-600 text-gray-100 px-2 py-1 rounded mr-2 mb-2 text-sm"
+              className="inline-block font-text  bg-gray-600 text-gray-100 px-2 py-1 rounded mr-2 mb-2 text-sm"
             >
               {tech}
             </span>
@@ -62,7 +64,7 @@ const Project = ({
               href={websiteLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 font-text text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Visit Website
               <FaInternetExplorer className="text-lg ml-2 text-white" />
@@ -73,7 +75,7 @@ const Project = ({
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="inline-flex items-center px-3 font-text py-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             View code
             <FaGithub className="text-lg ml-2 text-white" />
@@ -87,11 +89,13 @@ const Project = ({
         description={description}
         technologies={technologies}
         img={imgSrc}
+        imgSrcs={imgSrcs}
         longDescription={longDescription}
         features={features}
         backendGithubLink={backendGithubLink}
         githubLink={githubLink}
         websiteLink={websiteLink}
+        adminSiteLink={adminSiteLink}
       />
     </div>
   );

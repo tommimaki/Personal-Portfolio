@@ -2,6 +2,9 @@ import goodmood from "../../assets/goodmood.png";
 import lainakaarat from "../../assets/lainakaarat.png";
 import api from "../../assets/api.png";
 import backdoor from "../../assets/backdoor.png";
+import bak1 from "../../assets/bak1.png";
+import bak2 from "../../assets/bak2.png";
+import bak3 from "../../assets/bak3.png";
 import dekkikeisari from "../../assets/dekkikeisari.jpg";
 
 const projectData = [
@@ -12,9 +15,11 @@ const projectData = [
     longDescription:
       "I made this project to learn more about docker, AWS and Next.js. The project has a frontend built with Next.js and styled with Tailwind CSS, The backend is built with Node.js, the back is put in docker container and hosted on dockerhub, from which the image is pulled to AWS ECS container service. Both the customer facing and admin facing front end sites are connected to the same aws container, which is then used to perform crud functions to data in MongoDB ",
     imgSrc: backdoor,
+    imgSrcs: [bak1, bak2, bak3],
     websiteLink: "https://backdoor.netlify.app",
     githubLink: "https://github.com/tommimaki/Backdoor.com",
     backendGithubLink: "https://github.com/tommimaki/backdoorBackend",
+    adminSiteLink: "https://backdoor-admin.netlify.app/",
     technologies: [
       "Next.js",
       "Tailwind",

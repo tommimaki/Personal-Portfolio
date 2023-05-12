@@ -9,11 +9,11 @@ function About() {
       className="flex h-[calc(100vh-28px)]   flex-col items-center justify-center md:flex-row md:justify-center my-20 sm:my-10  mx-auto max-w-5xl"
     >
       <div className="md:flex md:flex-col md:items-center">
-        <h1 className="text-3xl sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
+        <h1 className="text-2xl font-header sm:text-5xl font-semibold mb-4 md:mb-10 text-center">
           Hello, I'm <span className="text-lime-400">Tommi</span>
         </h1>
         <div className="w-full md:w-3/4 px-4">
-          <p className="text-lg sm:text-xl ">
+          <p className="text-lg font-text sm:text-xl ">
             I'm a full-stack developer with a passion for creating beautiful,
             efficient, and user-friendly web applications.
             <br />

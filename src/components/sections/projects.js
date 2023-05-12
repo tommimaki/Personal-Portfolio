@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className=" text-center mb-20">
       <div className="flex flex-col items-center">
-        <h2 className="text-4xl font-semibold text-center mb-20">
+        <h2 className="text-xl sm:text-4xl font-header font-semibold text-center mb-20">
           Featured Projects
           <hr className="border-1 mt-1 flex-grow  border-gray-300" />
         </h2>
@@ -23,11 +23,13 @@ const Projects = () => {
             description={project.description}
             longDescription={project.longDescription}
             imgSrc={project.imgSrc}
+            imgSrcs={project.imgSrcs}
             websiteLink={project.websiteLink}
             githubLink={project.githubLink}
             technologies={project.technologies}
             features={project.features}
             backendGithubLink={project.backendGithubLink}
+            adminSiteLink={project.adminSiteLink}
           />
         ))}
       </div>

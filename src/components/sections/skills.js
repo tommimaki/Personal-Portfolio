@@ -31,7 +31,7 @@ function Skills() {
       className="text-center items-center justify-center md:flex-row md:justify-center mx-auto max-w-5xl"
     >
       <div className="flex flex-col items-center">
-        <h2 className="text-4xl font-semibold text-center mb-20">
+        <h2 className="text-xl sm:text-4xl font-semibold font-header text-center mb-20">
           Skills
           <hr className="border-1 mt-1 w-full border-gray-300" />
         </h2>

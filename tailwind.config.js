@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["ui-monospace", "SFMono-Regular"],
+        hackerman: ["Audiowide", "cursive"],
+        text: ["Poppins", "sans-serif"],
+        header: ["Days One", "sans-serif"],
       },
       backgroundColor: {
         "blue-400": "#1e3a8a",

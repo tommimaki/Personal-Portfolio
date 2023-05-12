@@ -31,7 +31,7 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link mx-4 text-xl cursor-pointer  text-white group-hover:text-gray-300"
+                className="nav-link mx-4 text-xl cursor-pointer font-header  text-white group-hover:text-gray-300"
               >
                 {name}
               </Link>
@@ -53,7 +53,7 @@ const Header = () => {
           } md:hidden flex-col items-center bg-gray-800 w-full h-auto absolute z-10 top-0 right-0 py-4`}
         >
           <button
-            className="text-white focus:outline-none mb-4 self-center"
+            className="text-white focus:outline-none  mb-4 self-center"
             onClick={toggleMenu}
           >
             <FiX size={24} />
@@ -72,7 +72,7 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link text-xl cursor-pointer text-white  group-hover:text-lime-400 px-4 py-2 rounded-md"
+                className="nav-link text-xl cursor-pointer text-white font-header group-hover:text-lime-400 px-4 py-2 rounded-md"
                 onClick={toggleMenu}
               >
                 {name}

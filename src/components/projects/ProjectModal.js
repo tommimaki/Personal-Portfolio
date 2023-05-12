@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Modal from "react-modal";
+import ImageCarousel from "../modal/imageCarousel";
 
 import { FaGithub, FaInternetExplorer, FaTimes } from "react-icons/fa";
 
@@ -11,10 +12,12 @@ const ProjectModal = ({
   technologies,
   longDescription,
   img,
+  imgSrcs,
   features,
   backendGithubLink,
   websiteLink,
   githubLink,
+  adminSiteLink,
 }) => {
   useEffect(() => {
     if (isOpen) {
@@ -28,6 +31,8 @@ const ProjectModal = ({
     };
   }, [isOpen]);
 
+  console.log(websiteLink, "web");
+  console.log(adminSiteLink, "adm");
   return (
     <Modal
       isOpen={isOpen}
@@ -47,13 +52,17 @@ const ProjectModal = ({
             <FaTimes className="self-end" />
           </button>
         </div>
+        {imgSrcs && imgSrcs.length > 1 ? (
+          <ImageCarousel imageUrls={imgSrcs} />
+        ) : (
+          <img
+            src={img}
+            alt="Project preview"
+            className="w-full h-48 mb-4 object-cover rounded"
+          />
+        )}
 
-        <img
-          src={img}
-          alt="Project preview"
-          className="w-full h-48 mb-4 object-cover rounded"
-        />
-        <p className="mb-4 text-white">{longDescription}</p>
+        <p className="mb-4 font-text text-white">{longDescription}</p>
         <div className="flex justify-center md:space-x-4 space-x-1 mb-4">
           {websiteLink && (
             <a
@@ -63,6 +72,17 @@ const ProjectModal = ({
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               View Website
+              <FaInternetExplorer className="text-lg ml-2 text-white" />
+            </a>
+          )}
+          {adminSiteLink && (
+            <a
+              href={adminSiteLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-teal-600 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300  "
+            >
+              View admin page
               <FaInternetExplorer className="text-lg ml-2 text-white" />
             </a>
           )}
@@ -92,16 +112,16 @@ const ProjectModal = ({
 
         <div className="flex justify-between flex-wrap">
           <div className="w-full md:w-1/2">
-            <h4 className="text-white mb-2">Techstack:</h4>
-            <ul className="list-disc list-inside mb-4 text-white">
+            <h4 className="text-white font-text mb-2">Techstack:</h4>
+            <ul className="list-disc list-inside mb-4 font-text text-white">
               {technologies.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}
             </ul>
           </div>
           <div className="w-full md:w-1/2">
-            <h4 className="text-white mb-2">Features:</h4>
-            <ul className="list-disc list-inside mb-4 text-white">
+            <h4 className="text-white font-text mb-2">Features:</h4>
+            <ul className="list-disc list-inside font-text mb-4 text-white">
               {features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
