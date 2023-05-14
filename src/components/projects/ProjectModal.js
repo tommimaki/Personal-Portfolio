@@ -1,3 +1,4 @@
+//ProjectModal.js
 import React, { useEffect } from "react";
 import Modal from "react-modal";
 import ImageCarousel from "../modal/imageCarousel";
@@ -31,18 +32,16 @@ const ProjectModal = ({
     };
   }, [isOpen]);
 
-  console.log(websiteLink, "web");
-  console.log(adminSiteLink, "adm");
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      className="fixed top-10 bottom-10 left-0 w-90  flex items-center justify-center "
+      className="fixed inset-0 flex items-center justify-center"
       style={{ overlay: { zIndex: 1000 } }}
     >
       <div className=" w-11/12 md:w-3/4 lg:w-1/2  bg-gray-800 rounded-lg p-6 shadow-lg overflow-y-auto max-h-full">
         <div className="flex justify-between w-full mb-4">
-          <h2 className="text-3xl text-center font-semibold text-white">
+          <h2 className="text-3xl text-center font-header font-semibold text-white">
             {title}
           </h2>
           <button
@@ -62,14 +61,21 @@ const ProjectModal = ({
           />
         )}
 
-        <p className="mb-4 font-text text-white">{longDescription}</p>
-        <div className="flex justify-center md:space-x-4 space-x-1 mb-4">
+        {longDescription.split("\n").map((item, key) => {
+          return (
+            <p key={key} className="mb-4 font-text text-white">
+              {item}
+            </p>
+          );
+        })}
+
+        <div className="flex justify-center mx-28  flex-col sm:flex-row md:space-x-4 space-x-1 mb-4">
           {websiteLink && (
             <a
               href={websiteLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 my-1 text-sm font-text text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               View Website
               <FaInternetExplorer className="text-lg ml-2 text-white" />
@@ -80,9 +86,9 @@ const ProjectModal = ({
               href={adminSiteLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-teal-600 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300  "
+              className="inline-flex items-center px-3 my-1  py-2 text-sm  font-text text-white bg-teal-600 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300  "
             >
-              View admin page
+              Admin Page
               <FaInternetExplorer className="text-lg ml-2 text-white" />
             </a>
           )}
@@ -91,7 +97,7 @@ const ProjectModal = ({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              className="inline-flex items-center px-3 my-1  py-2 text-sm font-text text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
             >
               Frontend Repo
               <FaGithub className="text-lg ml-2 text-white" />
@@ -102,7 +108,7 @@ const ProjectModal = ({
               href={backendGithubLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center px-2 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
+              className="inline-flex items-center px-3 my-1 py-2 text-sm  font-text text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
             >
               Backend Repo
               <FaGithub className="text-lg ml-2 text-white" />

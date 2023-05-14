@@ -18,19 +18,15 @@ const ImageCarousel = ({ imageUrls }) => {
 
   return (
     <div id="gallery" className="relative w-full" data-carousel="slide">
-      <div className="relative  min-h-[300px] lg:min-h-[600px] md:min-h-[450px] mb-6 mx-6 overflow-hidden  ">
+      <div className="relative  h-[60vw] sm:h-[30vw] mb-6 mx-6 overflow-hidden flex justify-center items-center">
         {imageUrls.map((imageUrl, index) => (
           <div
             key={index}
             className={`${
               index === activeIndex ? "inline-block" : "hidden"
-            } duration-700 ease-in-out`}
+            } duration-700 ease-in-out flex justify-center items-center`}
           >
-            <img
-              src={imageUrl}
-              className="absolute inline-block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="apartment"
-            />
+            <img src={imageUrl} alt="project" />
           </div>
         ))}
       </div>
@@ -39,10 +35,10 @@ const ImageCarousel = ({ imageUrls }) => {
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handlePrev}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent  group-hover:bg-bgLight group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent  bg-bgLight ring-4 ring-customGreen hover:ring-green-900 outline-none">
           <svg
             aria-hidden="true"
-            className="w-8 h-8 text-green-600 "
+            className="w-8 h-8 text-customGreen hover:text-green-900 "
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -60,13 +56,13 @@ const ImageCarousel = ({ imageUrls }) => {
       </button>
       <button
         type="button"
-        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group outline-none"
         onClick={handleNext}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent  group-hover:bg-bgLight group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent  bg-bgLight ring-4 ring-customGreen hover:ring-green-900  outline-none">
           <svg
             aria-hidden="true"
-            className="w-6 h-6 text-green-600"
+            className="w-8 h-8 text-customGreen  hover:text-green-900  "
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
