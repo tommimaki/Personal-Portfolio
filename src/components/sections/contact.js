@@ -53,7 +53,7 @@ const Contact = () => {
         <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
-              className="block text-gray-300 text-sm font-bold mb-2"
+              className="block text-gray-300 font-text text-sm font-bold mb-2"
               htmlFor="email"
             >
               Email
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
           <div className="mb-6">
             <label
-              className="block text-gray-300 text-sm font-bold mb-2"
+              className="block text-gray-300 text-sm font-text mb-2"
               htmlFor="message"
             >
               Message
