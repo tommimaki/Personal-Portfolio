@@ -17,7 +17,7 @@ const Project = ({
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
-    <div className="project-card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+    <div className="project-card max-w-sm border  rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col">
       <div className="flex-grow p-4 pb-0">
         <img
           className="rounded-t-lg w-auto max-h-[200px] mb-4 mx-auto cursor-pointer"
@@ -28,11 +28,11 @@ const Project = ({
         />
 
         <div className="p-2 flex items-center flex-col">
-          <h3 className="text-2xl font-bold tracking-tight text-gray-900 font-header dark:text-white mb-2">
+          <h3 className="text-2xl font-bold tracking-tight  font-header dark:text-white mb-2">
             {title}
           </h3>
 
-          <p className="font-normal font-text text-gray-700 pb-2 font-text dark:text-gray-400">
+          <p className="font-normal font-text pb-2  text-gray-300">
             {description}
           </p>
           <button onClick={() => setModalIsOpen(true)}>
@@ -41,7 +41,6 @@ const Project = ({
               <p className="ml-2 font-text ">Read more </p>
             </div>
           </button>
-          {/* <hr className="border-1 w-full border-gray-300 my-2" /> */}
         </div>
       </div>
       <hr className="border-1 w-full border-gray-300 mb-2 mr-4" />

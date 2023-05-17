@@ -39,7 +39,7 @@ const ProjectModal = ({
       className="fixed inset-0 flex items-center justify-center"
       style={{ overlay: { zIndex: 1000 } }}
     >
-      <div className=" w-11/12 md:w-3/4 lg:w-1/2  bg-gray-800 rounded-lg p-6 shadow-lg overflow-y-auto max-h-full">
+      <div className="w-11/12 md:w-3/4 lg:w-1/2  bg-gray-800 rounded-lg p-6 shadow-lg overflow-y-auto max-h-full">
         <div className="flex justify-between w-full mb-4">
           <h2 className="text-3xl text-center font-header font-semibold text-white">
             {title}
