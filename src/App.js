@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 import Contact from "./components/sections/contact";
 import Skills from "./components/sections/skills";
@@ -23,6 +24,13 @@ function App() {
 
   return (
     <div>
+      <Helmet>
+        <title>Tommi's Portfolio</title>
+        <meta
+          name="description"
+          content="I'm a full-stack developer with a passion for creating beautiful, efficient, and user-friendly web applications."
+        />
+      </Helmet>
       <TitleAnimation />
       <Header />
       <div className="App min-h-screen bg-gray-900 text-gray-100">
