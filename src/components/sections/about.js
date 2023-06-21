@@ -32,9 +32,8 @@ function About() {
               graduate in December 2023.
             </p>
             <br />
-            At the moment I'm looking for an{" "}
-            <span className="text-customGreen">internship</span> or a junior
-            level position preferably in web development.
+            At the moment I'm looking for opportunities to grow professionally
+            in the IT-field.
             <br />
             <br />
             See more of my work on my Github or shoot me a message on LinkedIn
