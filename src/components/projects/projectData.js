@@ -1,4 +1,4 @@
-import goodmood from "../../assets/goodmood.png";
+import goodmood2 from "../../assets/goodmood2.png";
 import lainakaaratmin from "../../assets/lainakaaratmin.png";
 import api from "../../assets/api.png";
 import bak1 from "../../assets/bak1.png";
@@ -112,14 +112,13 @@ const projectData = [
   },
   {
     title: "Good Mood",
-    description: "Website for a beauty studio. Built with React",
-    longDescription:
-      "A website for a beauty studio Business, Built with react ",
-    imgSrc: goodmood,
-    websiteLink: "https://bright-dragon-6739af.netlify.app/",
+    description: "Website for a beauty studio.",
+    longDescription: "A website for a beauty studio Business. ",
+    imgSrc: goodmood2,
+    websiteLink: "https://goodmoodbynats.com/",
     githubLink: "https://github.com/tommimaki/GoodMood",
-    technologies: ["Javascript", "React", "Node.js", "CSS"],
-    features: ["React", "Css", "JavaScript"],
+    technologies: ["Wordpress", "CSS"],
+    features: ["Css", "JavaScript"],
   },
   {
     title: "Green Helsinki",
